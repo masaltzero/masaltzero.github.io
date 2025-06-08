@@ -77,7 +77,7 @@ body {
 .parent {
   width: 534px;
   padding: 12px;
-  backdrop-filter: blur(0px) grayscale(100%) brightness(25%);
+  backdrop-filter: blur(0px) grayscale(100%) contrast(75%) brightness(10%);
 }
 .parentbg {
   background-color: #444;
