@@ -66,3 +66,14 @@ body {
   text-decoration: underline;
   text-transform: none;
 }
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 24px;
+}
