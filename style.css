@@ -62,6 +62,10 @@ body {
   transform: rotate(360deg);
 }
 
+.new {
+  opacity: 0.64;
+}
+
 .new a {
   text-decoration: underline;
   text-transform: none;
@@ -76,4 +80,5 @@ body {
   flex-direction: column;
   gap: 6px;
   font-size: 24px;
+  opacity: 0.64;
 }
