@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="icon.png" type="image/x-icon" />
+    <meta property="og:image" content="cobble.png" />
+    <meta
+      property="og:description"
+      content="Join the 22is5 Minecraft server."
+    />
+    <meta property="og:title" content="22is5 Minecraft Server" />
+    <link rel="stylesheet" href="minecraft.css" />
+    <title>22is5 Minecraft Server</title>
+  </head>
+
+  <body>
+    <!-- <audio src="" class="bgm" autoplay></audio> -->
+    <div class="bg"></div>
+    <div class="bg2"></div>
+    <!-- special -->
+    <img src="textures/item/iron_sword.png" id="cursor" draggable="false" />
+    <img src="textures/misc/pumpkinblur.png" id="pumpkin" draggable="false" />
+    <div class="tooltip" id="masalt-tooltip">
+      <div class="tooltip-info">
+        <div class="tooltip-title gold bold">masalt</div>
+        <div class="tooltip-line">Faction</div>
+        <div class="tooltip-line gray">masalt</div>
+      </div>
+    </div>
+    <div class="tooltip" id="bureau-tooltip">
+      <div class="tooltip-info">
+        <div class="tooltip-title blue bold">The Bureau</div>
+        <div class="tooltip-line">Faction</div>
+        <div class="tooltip-line gray">22is5</div>
+      </div>
+    </div>
+    <div class="tooltip" id="information-tooltip">
+      <div class="tooltip-info">
+        <div class="tooltip-title bold">Information</div>
+        <div class="tooltip-line gold mono">mc.masalt.org</div>
+        <div class="tooltip-line">Vanilla 1.21.11</div>
+        <div class="tooltip-br"></div>
+        <div class="tooltip-line bold red">Rules</div>
+        <div class="tooltip-line">- Don't Grief</div>
+        <div class="tooltip-line">- Don't Steal</div>
+        <div class="tooltip-line">- Don't Cheat</div>
+        <div class="tooltip-line">- No Politics</div>
+        <div class="tooltip-line italic gray">Everything is handled on</div>
+        <div class="tooltip-line italic gray">a case-by-case basis.</div>
+      </div>
+    </div>
+    <div class="tooltip" id="discord-tooltip">
+      <div class="tooltip-info">
+        <div class="tooltip-title bold">Discord</div>
+        <div class="tooltip-line blurple">Click to join!</div>
+      </div>
+    </div>
+    <!-- /special -->
+
+    <!-- actual content -->
+    <div class="wrap">
+      <div class="content">
+        <img
+          src="textures/gui/title/minecraft.png"
+          class="title"
+          draggable="false"
+        />
+        <a class="button information">
+          <img
+            src="textures/gui/sprites/icon/info.png"
+            class="ico"
+            draggable="false"
+          />
+          <div class="button__text">Information</div>
+        </a>
+        <a
+          href="https://masalt.org/@/discord"
+          target="_blank"
+          class="button discord"
+        >
+          <img
+            src="textures/gui/sprites/toast/social_interactions.png"
+            class="ico"
+            draggable="false"
+            style="filter: brightness(100%); transform: scale(1.5)"
+          />
+          <div class="button__text">Discord</div>
+        </a>
+        <div class="factions">
+          <img
+            src="factions/masalt.png"
+            alt="masalt"
+            class="banner masalt"
+            draggable="false"
+          />
+          <img
+            src="factions/bureau.png"
+            alt="The Bureau"
+            class="banner bureau"
+            draggable="false"
+          />
+        </div>
+        <div class="spacer"></div>
+        <a href="../" class="button">
+          <div class="button__text">Back to Home</div>
+        </a>
+      </div>
+    </div>
+    <script src="pumpkin.js"></script>
+    <script src="factions.js"></script>
+    <script>
+      document.addEventListener("mousemove", (event) => {
+        const followerDiv = document.getElementById("cursor");
+        followerDiv.style.left = event.clientX + "px";
+        followerDiv.style.top = event.clientY + "px";
+      });
+
+      // minceraft
+      const titleImage = document.querySelector("img.title");
+
+      const random = Math.floor(Math.random() * 100) + 1;
+
+      if (random === 64) {
+        titleImage.src = "textures/gui/title/minceraft.png";
+      } else {
+        titleImage.src = "textures/gui/title/minecraft.png";
+      }
+    </script>
+    <script src="click.js"></script>
+    <script src="tooltips.js"></script>
+  </body>
+</html>
