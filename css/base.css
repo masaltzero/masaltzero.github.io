@@ -1,0 +1,39 @@
+@import url("https://cdn.22is5.com/css/reset.css");
+@import url("global.css");
+@import url("https://cdn.22is5.com/fonts/source-serif/font.css");
+
+.wrap {
+  width: 100%;
+}
+
+body {
+  background-color: var(--background-color);
+}
+
+.content {
+  font-size: 24px;
+  font-family: var(--font);
+  padding: 12px;
+  color: var(--text-color);
+}
+
+.title {
+  font-size: 1.8em;
+}
+
+.header {
+  color: var(--header-color);
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.italic {
+  font-family: var(--font-italic);
+}
+
+.sub {
+  font-size: 0.8em;
+  opacity: 0.8;
+}

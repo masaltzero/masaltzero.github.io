@@ -1,0 +1,20 @@
+:root {
+  --background-color: #000;
+  --header-color: var(--orange);
+  --text-color: #dedede;
+  --orange: #ff7f27;
+
+  --font: "Source Serif";
+  --font-italic: "Source Serif Italic";
+
+  --latest-release: "MAD SANTA";
+  --release-date: "December 24, 2025";
+}
+
+.latest::after {
+  content: var(--latest-release);
+}
+
+.date::after {
+  content: var(--release-date);
+}
