@@ -242,3 +242,10 @@ body {
   left: 14px;
   filter: brightness(64%);
 }
+
+.more {
+  position: absolute;
+  z-index: 10000;
+  right: 0;
+  bottom: 0;
+}

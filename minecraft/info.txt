@@ -1,0 +1,7 @@
+valid ips
+- mc.masalt.org
+- mc.22is5.com
+
+gameplay tweaks
+- vein miner (mine whole ore vein instantly)
+- timber (mine whole tree instantly)
